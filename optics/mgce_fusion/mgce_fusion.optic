@@ -47,10 +47,10 @@ Rule {
 // Rule 4: Boost descriptions about tools and technologies
 Rule {
     Matches {
-        Description("tools")
+        Content("tools")
     },
     Matches {
-        Description("technologies")
+        Content("technologies")
     },
     Action(Boost(1))
 };
@@ -58,10 +58,10 @@ Rule {
 // Rule 5: Boost descriptions about community practices
 Rule {
     Matches {
-        Description("community")
+        Content("community")
     },
     Matches {
-        Description("practices")
+        Content("practices")
     },
     Action(Boost(1))
 };
@@ -69,7 +69,7 @@ Rule {
 // Rule 6: Boost descriptions about institutional innovation
 Rule {
     Matches {
-        Description("institutional innovation")
+        Content("institutional innovation")
     },
     Action(Boost(1))
 };
@@ -77,13 +77,13 @@ Rule {
 // Rule 7: Boost descriptions about specific research areas
 Rule {
     Matches {
-        Description("cryptoeconomics")
+        Content("cryptoeconomics")
     },
     Matches {
-        Description("decentralized systems")
+        Content("decentralized systems")
     },
     Matches {
-        Description("collective intelligence")
+        Content("collective intelligence")
     },
     Action(Boost(1))
 };
