@@ -1,57 +1,88 @@
-// Metagov Focus Optic - Mission-Centric
+// Metagov Focus Optic - Research and Community Oriented
 
 // Overall Optic Behavior:
-// This optic prioritizes content related to Metagov's mission: cultivating tools, practices, 
-// and communities that enable self-governance in the digital age.
-// It works as follows:
-// 1. Any result from metagov.org gets a significant boost (Boost(2)).
-// 2. Results mentioning "self-governance" and "digital age" get a strong boost (Boost(1.5)).
-// 3. Results mentioning tools, practices, or communities for digital self-governance get a moderate boost (Boost(1)).
-// 4. The Like statement for metagov.org further reinforces preference for this domain.
+// This optic prioritizes content related to Metagov's research areas, digital governance,
+// and community-driven initiatives in the digital age.
+// It aims to surface relevant content for researchers, practitioners, and the Metagov community.
 
 DiscardNonMatching;
 
-// Rule 1: Boost results from metagov.org
+// Rule 1: Strongly boost results from Metagov and closely related domains
 Rule {
     Matches {
         Domain("metagov.org")
     },
+    Matches {
+        Domain("cryptoeconomicsystems.pubpub.org")
+    },
     Action(Boost(3))
 };
 
-// Rule 2: Boost content directly related to self-governance in the digital age
+// Rule 2: Boost content related to digital governance
 Rule {
     Matches {
-        Content("digital")
+        Content("digital governance")
     },
     Matches {
-        Content("self-governance")
+        Content("online governance")
     },
     Action(Boost(2))
 };
 
-// Rule 3: Boost content about tools for digital self-governance
+// Rule 3: Boost content about self-governance in digital contexts
 Rule {
     Matches {
-        Content("tools"),
+        Content("self-governance")
+    },
+    Matches {
+        Content("digital")
+    },
+    Action(Boost(2))
+};
+
+// Rule 4: Boost content about tools and technologies
+Rule {
+    Matches {
+        Content("tools")
+    },
+    Matches {
+        Content("technologies")
     },
     Action(Boost(1))
 };
 
-// Rule 4: Boost content about practices for digital self-governance
+// Rule 5: Boost content about community practices
 Rule {
     Matches {
-        Content("practices"),
+        Content("community")
+    },
+    Matches {
+        Content("practices")
     },
     Action(Boost(1))
 };
 
-// Rule 5: Boost content about communities engaged in digital self-governance
+// Rule 6: Boost content about institutional innovation
 Rule {
     Matches {
-        Content("communities"),
+        Content("institutional innovation")
+    },
+    Action(Boost(1))
+};
+
+// Rule 7: Boost content about specific research areas
+Rule {
+    Matches {
+        Content("cryptoeconomics")
+    },
+    Matches {
+        Content("decentralized systems")
+    },
+    Matches {
+        Content("collective intelligence")
     },
     Action(Boost(1))
 };
 
 Like(Site("metagov.org"));
+Like(Site("cryptoeconomicsystems.pubpub.org"));
