@@ -1,0 +1,40 @@
+// Name: MG Metagov Projects
+// Description: This optic customizes search results across Metagov projects
+// Url: https://github.com/c-host/mg_optic/blob/main/optics/metagov_projects.optic
+// Version: 0.0.1
+
+Rule {
+    Matches {
+        Content("Agreement Engine"),
+        Content("AI Palace"),
+        Content("Calm Technology"),
+        Content("CommunityRule"),
+        Content("Constitutions of Web3"),
+        Content("D20 Governance"),
+        Content("DAOchem"),
+        Content("DAO Science"),
+        Content("DAOstar"),
+        Content("Digital Ethnography Reading Group"),
+        Content("Govbase Dataset"),
+        Content("Governance Archaeology"),
+        Content("Governance Experience Design"),
+        Content("Governance Research Round"),
+        Content("Governance Surfaces"),
+        Content("Grant Innovation Lab"),
+        Content("Groundwork Fellowship"),
+        Content("KOI Pond"),
+        Content("LARP Governance"),
+        Content("MetagovDAO"),
+        Content("Metagov Gateway"),
+        Content("Metagov Seminar"),
+        Content("Modpol"),
+        Content("Modular Politics"),
+        Content("OSS Transitions"),
+        Content("PolicyKit"),
+        Content("Public AI"),
+        Content("Redwood Parliament"),
+        Content("Telescope"),
+        Content("Validator Commons")
+    },
+    Action(Boost(3))
+};

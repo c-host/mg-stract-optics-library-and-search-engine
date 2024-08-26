@@ -1,0 +1,54 @@
+// Name: MG DAO and Blockchain Governance
+// Description: This optic customizes search results across DAO and blockchain metagovernance
+// Url: https://github.com/c-host/mg_optic/blob/main/optics/dao_blockchain_governance.optic
+
+// Version: 0.0.1
+
+Rule {
+    Matches {
+        Content("decentralized autonomous organization"),
+        Content("DAO"),
+        Content("cryptopolitics"),
+        Content("on-chain governance"),
+        Content("off-chain governance"),
+        Content("governance tokens"),
+        Content("decentralized courts")
+    },
+    Action(Boost(4))
+};
+
+Rule {
+    Matches {
+        Domain("ethereum.org"),
+        Domain("near.org"),
+        Domain("optimism.io"),
+        Domain("aragon.org"),
+        Domain("commonwealth.im"),
+        Domain("snapshot.org"),
+        Domain("tally.xyz"),
+        Domain("colony.io"),
+        Domain("daohaus.club"),
+        Domain("gnosis-safe.io"),
+        Domain("compound.finance"),
+        Domain("makerdao.com"),
+        Domain("uniswap.org"),
+        Domain("aave.com"),
+        Domain("radicle.xyz"),
+        Domain("1hive.org"),
+        Domain("metacartel.org")
+    },
+    Action(Boost(2))
+};
+
+// Community Interaction Section
+// Before making changes, please read the CONTRIBUTING.md file in the repository.
+
+// Add your rules here!
+// Rule {
+//     Matches {
+//         // Your custom matches related to DAO and blockchain governance
+//     },
+//     Action(Boost(2))
+// };
+
+// To propose changes, please open an issue or pull request in the GitHub repository.

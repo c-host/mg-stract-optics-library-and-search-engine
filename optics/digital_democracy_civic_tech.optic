@@ -1,0 +1,53 @@
+// Name: MG Digital Democracy and Civic Tech
+// Description: This optic customizes search results across metagovernance relevant digital democracy and civic tech
+// Url: https://github.com/c-host/mg_optic/blob/main/optics/digital_democracy_civic_tech.optic
+
+// Version: 0.0.1
+
+Rule {
+    Matches {
+        Content("digital democracy"),
+        Content("civic tech"),
+        Content("participatory governance"),
+        Content("e-democracy"),
+        Content("digital citizenship"),
+        Content("online deliberation"),
+        Content("collaborative decision-making"),
+        Content("online voting"),
+        Content("deliberation"),
+        Content("civic participation")
+    },
+    Action(Boost(3))
+};
+
+Rule {
+    Matches {
+        Domain("mysociety.org"),
+        Domain("citizenlab.ca"),
+        Domain("decidim.org"),
+        Domain("loomio.org"),
+        Domain("democraciaos.org/"),
+        Domain("opengovpartnership.org"),
+        Domain("theengineroom.org"),
+        Domain("civictech.guide"),
+        Domain("g0v.tw"),
+        Domain("codeforamerica.org"),
+        Domain("metagov.github.io/d20-governance/"),
+        Domain("policykit.org"),
+        Domain("modpol.net/")
+    },
+    Action(Boost(2))
+};
+
+// Community Interaction Section
+// Before making changes, please read the CONTRIBUTING.md file in the repository.
+
+// Add your rules here!
+// Rule {
+//     Matches {
+//         // Your custom matches related to digital democracy and civic tech
+//     },
+//     Action(Boost(2))
+// };
+
+// To propose changes, please open an issue or pull request in the GitHub repository.
