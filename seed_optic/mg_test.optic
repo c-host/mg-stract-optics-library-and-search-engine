@@ -20,6 +20,8 @@
 // 
 // Note: The actual impact may vary based on the search query and available content in the Stract index.
 
+DiscardNonMatching;
+
 // Rule 1: Boost results from metagov.org
 // This rule significantly increases the ranking of any result from the metagov.org domain
 Rule {
@@ -31,13 +33,10 @@ Rule {
 
 // Rule 2: Boost governance-related content
 // This rule slightly increases the ranking of results that mention "governance"
-// in either the title or the description
+// in its content
 Rule {
     Matches {
-        Title("governance")
-    },
-    Matches {
-        Description("governance")
+        Content("governance")
     },
     Action(Boost(1))
 };
