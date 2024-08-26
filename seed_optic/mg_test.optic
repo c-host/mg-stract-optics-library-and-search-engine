@@ -1,10 +1,17 @@
 // Name: Metagov Test Optic
 // Description: Testing optic functionality using Metagov website
-// Version: 0.0.1
+// Version: 0.0.2
 
 Rule {
     Matches {
         Domain("metagov.org")
     },
     Action(Boost(5))
+};
+
+Rule {
+    Matches {
+        Title("Metagov")
+    },
+    Action(Boost(3))
 };
