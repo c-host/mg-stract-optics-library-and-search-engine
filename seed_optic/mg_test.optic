@@ -5,18 +5,26 @@ Rule {
     Matches {
         Domain("metagov.org")
     },
-    Action(Boost(3))
+    Action(Boost(2))
 };
 
 Rule {
     Matches {
-        Title("digital governance"),
-        Title("online governance"),
+        Title("digital governance")
+    },
+    Matches {
+        Title("online governance")
+    },
+    Matches {
         Title("self-governance")
     },
     Matches {
-        Description("digital governance"),
-        Description("online governance"),
+        Description("digital governance")
+    },
+    Matches {
+        Description("online governance")
+    },
+    Matches {
         Description("self-governance")
     },
     Action(Boost(1))
@@ -24,33 +32,61 @@ Rule {
 
 Rule {
     Matches {
-        Title("DAOstar"),
-        Title("Interoperable Institutions Initiative"),
-        Title("Calm Technology"),
+        Title("DAOstar")
+    },
+    Matches {
+        Title("Interoperable Institutions Initiative")
+    },
+    Matches {
+        Title("Calm Technology")
+    },
+    Matches {
         Title("Public AI")
     },
     Matches {
-        Description("DAOstar"),
-        Description("Interoperable Institutions Initiative"),
-        Description("Calm Technology"),
+        Description("DAOstar")
+    },
+    Matches {
+        Description("Interoperable Institutions Initiative")
+    },
+    Matches {
+        Description("Calm Technology")
+    },
+    Matches {
         Description("Public AI")
     },
-    Action(Boost(2))
+    Action(Boost(1))
 };
 
 Rule {
     Matches {
-        Title("governance"),
-        Title("community"),
-        Title("research"),
-        Title("digital"),
+        Title("governance")
+    },
+    Matches {
+        Title("community")
+    },
+    Matches {
+        Title("research")
+    },
+    Matches {
+        Title("digital")
+    },
+    Matches {
         Title("online")
     },
     Matches {
-        Description("governance"),
-        Description("community"),
-        Description("research"),
-        Description("digital"),
+        Description("governance")
+    },
+    Matches {
+        Description("community")
+    },
+    Matches {
+        Description("research")
+    },
+    Matches {
+        Description("digital")
+    },
+    Matches {
         Description("online")
     },
     Action(Boost(1))
