@@ -1,0 +1,64 @@
+// Syntax explanation: https://github.com/StractOrg/sample-optics/blob/main/quickstart.optic
+
+// [Optic Name]
+
+// Overall Optic Behavior:
+// [Provide a brief explanation of what this optic does and its main focus]
+
+// Discard all results that don't match any of the rules
+DiscardNonMatching;
+
+// Rule 1: [Brief description of the rule]
+Rule {
+    Matches {
+        Domain("[example.com]")
+    },
+    Action(Boost(3))
+};
+
+// Rule 2: [Brief description of the rule]
+Rule {
+    Matches {
+        Content("[keyword or phrase]")
+    },
+    Action(Boost(2))
+};
+
+// Rule 3: [Brief description of the rule]
+Rule {
+    Matches {
+        Content("[keyword1]")
+    },
+    Matches {
+        Content("[keyword2]")
+    },
+    Action(Boost(2))
+};
+
+// Rule 4: [Brief description of the rule]
+Rule {
+    Matches {
+        Description("[keyword or phrase]")
+    },
+    Action(Boost(1))
+};
+
+// Rule 5: [Brief description of the rule]
+Rule {
+    Matches {
+        Title("[keyword or phrase]")
+    },
+    Action(Boost(1))
+};
+
+// Add more rules as needed...
+
+Like(Site("[preferred-site.com]"));
+Dislike(Site("[non-preferred-site.com]"));
+
+// Additional notes:
+// - Use comments to explain the purpose of each rule
+// - Adjust boost values (1-3) based on the importance of each rule
+// - Use different match locations (Domain, Content, Description, Title) as needed
+// - Consider the order of rules, as they are applied sequentially
+// - Test your optic with various searches and refine as necessary

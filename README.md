@@ -1,40 +1,33 @@
-# Metagovernance Optics
+# Metagov Optics Library
 
-This repository contains a collection of optics designed to customize search results related to various aspects of metagovernance and digital governance. These optics are compatible with Stract and other search engines that support the Optics language.
+Welcome to the Metagov Optics Library! This repository is a collaborative space for creating, sharing, and exploring Stract optics related to Metagov's research areas and digital governance.
 
-## Available Optics
+## What are Stract Optics?
 
-1. **Meta Metagov Optic** (`meta_metagov.optic`): An aggregate optic that combines various aspects of metagovernance.
+Stract optics are custom rules that influence search results in the Stract search engine. They allow users to prioritize certain types of content, boosting or downranking results based on specific criteria.
 
-2. **Metagov Projects Optic** (`metagov_projects.optic`): This optic customizes search results across Metagov projects.
+## Why This Library?
 
-3. **DAO and Blockchain Governance Optic** (`dao_blockchain_governance.optic`): This optic customizes search results across DAO and blockchain metagovernance.
+This library aims to:
+1. Showcase diverse perspectives on digital governance research
+2. Provide a learning resource for creating effective optics
+3. Foster creativity in approaching digital governance topics
+4. Create a collaborative space for the Metagov community
 
-4. **Digital Democracy and Civic Tech Optic** (`digital_democracy_civic_tech.optic`): This optic customizes search results across metagovernance relevant digital democracy and civic tech.
+## How to Contribute
 
-5. **Academic Research Optic** (`academic_research.optic`): This optic customizes search results across metagovernance relevant academic and research content.
+1. Fork this repository
+2. Create a new directory under `/optics` with your optic's name
+3. Add your `.optic` file and accompanying README.md
+4. Submit a pull request with a brief description of your optic
 
-6. **Recursive Governance Optic** (`recursive_governance.optic`): This optic focuses on self-referential and recursive concepts in metagovernance systems.
+See our [Contribution Guidelines](CONTRIBUTING.md) for more details.
 
-7. **Governance Tools and Platforms Optic** (`governance_tools_platforms.optic`): This optic customizes search results across metagovernance relevant governance tools and platforms.
+## Example Optics
 
-## Usage
+- [Metagov + Cryptoeconmic Systems Optic](optics/mgce_fusion/mgce_fusion.optic): This optic prioritizes content related to Metagov's research areas, digital governance, and community-driven initiatives in the digital age. It aims to surface relevant content for researchers, practitioners, and the Metagov community. It makes a link between Metagov and the Cryptoeconomic Systems publication.
 
-To use these optics with Stract:
+## Get Started
 
-1. Go to https://stract.com/settings/optics
-2. Enter the following information for each optic you want to use:
-   - Name: The name of the optic (e.g., "MG Metagov")
-   - URL: The raw GitHub URL of the .optic file (e.g., "https://raw.githubusercontent.com/c-host/mg_optic/main/optics/meta_metagov.optic")
-   - Description: A brief description of the optic's purpose
-
-   Note: The specific information for each optic can be found in the corresponding .optic files in this repository. For example, to use the MG Metagov Optic, you would enter:
-   - Name: MG Metagov
-   - URL: https://raw.githubusercontent.com/c-host/mg_optic/main/optics/meta_metagov.optic
-   - Description: This optic customizes search results across an aggregate of metagovernance optics
-3.  Perform your search queries to get customized results based on the loaded optic.
-4.  You can switch between added optics by clicking on the "Optics" menu item in the Stract interface.
-
-## Contributing
-
-This is a sandbox experiment to test browsing the web through different governance lenses. Contributions from the community are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
+- [How to Create an Optic](guides/how_to_create_an_optic.md)
+- [How to Test Your Optic](guides/how_to_test_your_optic.md)

@@ -1,50 +1,42 @@
-# Contributing to the Metagovernance Optics
+# Contributing to Metagov Optics Library
 
-This is an experimental repo for metagoverning the Stract search engine trough the lens of Metagov. Contributions to improve and expand Metagovernance Optics are welcome. This document outlines the process for contributing.
+We welcome contributions to the Metagov Optics Library! Here's how you can contribute:
 
-## How to Contribute
+## Creating a New Optic
 
-1. Fork the repository.
-2. Make your changes in your forked repository.
-3. Submit a pull request with a clear description of your changes.
+1. Fork the repository
+2. Create a new directory under `/optics` with a descriptive name for your optic
+3. In your new directory, add:
+   - Your `.optic` file
+   - A README.md file explaining your optic (use the template in `/templates/documentation_template.md`)
+4. Submit a pull request with a brief description of your optic
 
-## Guidelines for Contributions
+## Naming Conventions
 
-1. Ensure your contributions are relevant to metagovernance and digital governance.
-2. Use clear and descriptive comments in the optic files.
-3. Test your changes with Stract or another compatible search engine to ensure they produce the intended results.
-4. Update the version number in the optic file if you're making significant changes.
+- Use lowercase letters and underscores for directory and file names
+- Choose a name that reflects the focus or purpose of your optic
 
-## Contributing to Specific Optics
+## Documentation
 
-When contributing to a specific optic, please consider the following:
+In your optic's README.md, please include:
+- A brief description of your optic's focus
+- Your process of developing the optic
+- Example searches and results
+- Personal insights gained
 
-- **Meta Metagov Optic**: Focus on aggregating various aspects of metagovernance.
-- **Metagov Projects Optic**: Add or update entries related to Metagov projects and research areas.
-- **DAO and Blockchain Governance Optic**: Contribute content related to DAOs and blockchain-based governance.
-- **Digital Democracy and Civic Tech Optic**: Add relevant civic tech platforms or digital democracy initiatives.
-- **Academic Research Optic**: Contribute academic sources or research areas related to digital governance.
-- **Recursive Governance Optic**: Focus on self-referential and recursive concepts in metagovernance systems.
-- **Governance Tools and Platforms Optic**: Update with new or emerging governance tools and platforms.
+## Optic Guidelines
 
-## Adding a New Optic
+- Use comments to explain the purpose of each rule
+- Consider using `DiscardNonMatching` if you want to focus solely on your specified criteria
+- Utilize various match locations (Domain, Content, Description) to create comprehensive rules
+- Use appropriate boost values (1-3) to indicate the importance of each rule
 
-If you believe a new optic is needed:
+## Code of Conduct
 
-1. Propose the new optic by opening an issue in the repository.
-2. Describe the focus area of the new optic and why it's needed.
-3. If approved, create the new optic file following the existing structure and naming conventions.
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
 
-## Community Interaction
+## Questions?
 
-Some optic filess include a Community Interaction Section. When adding to this section:
+If you have any questions or need help, please open an issue or start a discussion in the repository.
 
-1. Ensure new domains or concepts are relevant and reputable.
-2. Follow the existing structure and formatting.
-3. Provide a brief explanation for your addition if necessary.
-
-## Questions or Suggestions
-
-If you have questions or suggestions about contributing, please open an issue in the repository.
-
-Thank you for experimenting with the Metagovernance Optics!
+Thank you for contributing to the Metagov Optics Library!

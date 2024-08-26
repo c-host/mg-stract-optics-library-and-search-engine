@@ -1,10 +1,14 @@
-// Metagov Focus Optic - Research and Community Oriented
+// Syntax explanation: https://github.com/StractOrg/sample-optics/blob/main/quickstart.optic
+
+// MGCE Fusion Optic
 
 // Overall Optic Behavior:
 // This optic prioritizes content related to Metagov's research areas, digital governance,
 // and community-driven initiatives in the digital age.
-// It aims to surface relevant content for researchers, practitioners, and the Metagov community.
+// It aims to surface relevant content for researchers, practitioners, and the Metagov community. 
+// It makes a link between Metagov and the Cryptoeconomic Systems publication.
 
+// Discard all results that don't match any of the rules
 DiscardNonMatching;
 
 // Rule 1: Strongly boost results from Metagov and closely related domains
