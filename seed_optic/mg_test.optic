@@ -1,17 +1,59 @@
-// Name: Metagov Test Optic
-// Description: Testing optic functionality using Metagov website
-// Version: 0.0.2
+// Metagov Focus Optic
+// Prioritizes content related to digital governance, online communities, and Metagov projects
 
 Rule {
     Matches {
         Domain("metagov.org")
     },
-    Action(Boost(5))
+    Action(Boost(2))
 };
 
 Rule {
     Matches {
-        Title("Metagov")
+        Title("digital governance"),
+        Title("online governance"),
+        Title("self-governance")
     },
-    Action(Boost(3))
+    Matches {
+        Description("digital governance"),
+        Description("online governance"),
+        Description("self-governance")
+    },
+    Action(Boost(1))
 };
+
+Rule {
+    Matches {
+        Title("DAOstar"),
+        Title("Interoperable Institutions Initiative"),
+        Title("Calm Technology"),
+        Title("Public AI")
+    },
+    Matches {
+        Description("DAOstar"),
+        Description("Interoperable Institutions Initiative"),
+        Description("Calm Technology"),
+        Description("Public AI")
+    },
+    Action(Boost(1))
+};
+
+Rule {
+    Matches {
+        Title("governance"),
+        Title("community"),
+        Title("research"),
+        Title("digital"),
+        Title("online")
+    },
+    Matches {
+        Description("governance"),
+        Description("community"),
+        Description("research"),
+        Description("digital"),
+        Description("online")
+    },
+    Action(Boost(0))
+};
+
+Like(Site("metagov.org"));
