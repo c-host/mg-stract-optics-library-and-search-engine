@@ -5,7 +5,7 @@ Rule {
     Matches {
         Domain("metagov.org")
     },
-    Action(Boost(2))
+    Action(Boost(3))
 };
 
 Rule {
@@ -35,7 +35,7 @@ Rule {
         Description("Calm Technology"),
         Description("Public AI")
     },
-    Action(Boost(1))
+    Action(Boost(2))
 };
 
 Rule {
@@ -53,7 +53,7 @@ Rule {
         Description("digital"),
         Description("online")
     },
-    Action(Boost(0))
+    Action(Boost(1))
 };
 
 Like(Site("metagov.org"));
