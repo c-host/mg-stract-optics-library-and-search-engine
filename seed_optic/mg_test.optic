@@ -22,8 +22,10 @@ Rule {
 // Rule 2: Boost content directly related to self-governance in the digital age
 Rule {
     Matches {
-        Content("self-governance"),
         Content("digital")
+    },
+    Matches {
+        Content("self-governance")
     },
     Action(Boost(2))
 };
@@ -32,7 +34,6 @@ Rule {
 Rule {
     Matches {
         Content("tools"),
-        Content("self-governance")
     },
     Action(Boost(1))
 };
@@ -41,7 +42,6 @@ Rule {
 Rule {
     Matches {
         Content("practices"),
-        Content("self-governance")
     },
     Action(Boost(1))
 };
@@ -50,7 +50,6 @@ Rule {
 Rule {
     Matches {
         Content("communities"),
-        Content("self-governance")
     },
     Action(Boost(1))
 };
