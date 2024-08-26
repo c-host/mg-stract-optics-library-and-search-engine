@@ -25,12 +25,12 @@ To use these optics with Stract:
 1. Go to https://stract.com/settings/optics
 2. Enter the following information for each optic you want to use:
    - Name: The name of the optic (e.g., "MG Metagov")
-   - URL: The raw GitHub URL of the .optic file (e.g., "https://raw.githubusercontent.com/c-host/mg-optic/main/meta_metagov.optic")
+   - URL: The raw GitHub URL of the .optic file (e.g., "https://raw.githubusercontent.com/c-host/mg_optic/main/optics/meta_metagov.optic")
    - Description: A brief description of the optic's purpose
 
    Note: The specific information for each optic can be found in the corresponding .optic files in this repository. For example, to use the MG Metagov Optic, you would enter:
    - Name: MG Metagov
-   - URL: https://raw.githubusercontent.com/c-host/mg-optic/main/meta_metagov.optic
+   - URL: https://raw.githubusercontent.com/c-host/mg_optic/main/optics/meta_metagov.optic
    - Description: This optic customizes search results across an aggregate of metagovernance optics
 3.  Perform your search queries to get customized results based on the loaded optic.
 4.  You can switch between added optics by clicking on the "Optics" menu item in the Stract interface.
