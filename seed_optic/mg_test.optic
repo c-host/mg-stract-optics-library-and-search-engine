@@ -1,29 +1,17 @@
-// Metagov Focus Optic - Step 2
+// Metagov Focus Optic - Mission-Centric
 
 // Overall Optic Behavior:
-// This optic is designed to prioritize content related to Metagov and governance in general.
+// This optic prioritizes content related to Metagov's mission: cultivating tools, practices, 
+// and communities that enable self-governance in the digital age.
 // It works as follows:
 // 1. Any result from metagov.org gets a significant boost (Boost(2)).
-// 2. Results mentioning "governance" in the title or description get a smaller boost (Boost(1)).
-// 3. The Like statement for metagov.org further reinforces preference for this domain.
-//
-// Rule Interaction:
-// - Rules are applied independently, so a result can be boosted by multiple rules.
-// - A result from metagov.org mentioning "governance" would get both boosts, significantly increasing its ranking.
-// - The Like statement works in conjunction with the rules, potentially giving metagov.org content
-//   an additional edge in ranking beyond the explicit boost.
-//
-// Search Result Impact:
-// - Results from metagov.org will appear higher in the search results.
-// - Governance-related content from other sources will also be promoted, but to a lesser degree.
-// - Other results will maintain their original ranking relative to each other.
-// 
-// Note: The actual impact may vary based on the search query and available content in the Stract index.
+// 2. Results mentioning "self-governance" and "digital age" get a strong boost (Boost(1.5)).
+// 3. Results mentioning tools, practices, or communities for digital self-governance get a moderate boost (Boost(1)).
+// 4. The Like statement for metagov.org further reinforces preference for this domain.
 
 DiscardNonMatching;
 
 // Rule 1: Boost results from metagov.org
-// This rule significantly increases the ranking of any result from the metagov.org domain
 Rule {
     Matches {
         Domain("metagov.org")
@@ -31,17 +19,43 @@ Rule {
     Action(Boost(2))
 };
 
-// Rule 2: Boost governance-related content
-// This rule slightly increases the ranking of results that mention "governance"
-// in its content
+// Rule 2: Boost content directly related to self-governance in the digital age
 Rule {
     Matches {
-        Content("governance")
+        Content("self-governance"),
+        Content("digital age")
+    },
+    Action(Boost(1.5))
+};
+
+// Rule 3: Boost content about tools for digital self-governance
+Rule {
+    Matches {
+        Content("tools"),
+        Content("digital"),
+        Content("self-governance")
     },
     Action(Boost(1))
 };
 
-// Like statement: Express preference for metagov.org
-// This indicates to Stract that the user generally prefers content from metagov.org
-// It may influence results beyond just boosting the domain
+// Rule 4: Boost content about practices for digital self-governance
+Rule {
+    Matches {
+        Content("practices"),
+        Content("digital"),
+        Content("self-governance")
+    },
+    Action(Boost(1))
+};
+
+// Rule 5: Boost content about communities engaged in digital self-governance
+Rule {
+    Matches {
+        Content("communities"),
+        Content("digital"),
+        Content("self-governance")
+    },
+    Action(Boost(1))
+};
+
 Like(Site("metagov.org"));
