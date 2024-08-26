@@ -40,46 +40,46 @@ Rule {
     Action(Boost(2))
 };
 
-// Rule 4: Boost content about tools and technologies
+// Rule 4: Boost descriptions about tools and technologies
 Rule {
     Matches {
-        Content("tools")
+        Description("tools")
     },
     Matches {
-        Content("technologies")
+        Description("technologies")
     },
     Action(Boost(1))
 };
 
-// Rule 5: Boost content about community practices
+// Rule 5: Boost descriptions about community practices
 Rule {
     Matches {
-        Content("community")
+        Description("community")
     },
     Matches {
-        Content("practices")
+        Description("practices")
     },
     Action(Boost(1))
 };
 
-// Rule 6: Boost content about institutional innovation
+// Rule 6: Boost descriptions about institutional innovation
 Rule {
     Matches {
-        Content("institutional innovation")
+        Description("institutional innovation")
     },
     Action(Boost(1))
 };
 
-// Rule 7: Boost content about specific research areas
+// Rule 7: Boost descriptions about specific research areas
 Rule {
     Matches {
-        Content("cryptoeconomics")
+        Description("cryptoeconomics")
     },
     Matches {
-        Content("decentralized systems")
+        Description("decentralized systems")
     },
     Matches {
-        Content("collective intelligence")
+        Description("collective intelligence")
     },
     Action(Boost(1))
 };
