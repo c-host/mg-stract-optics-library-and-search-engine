@@ -1,6 +1,27 @@
-// Metagov Focus Optic
-// Prioritizes content related to digital governance, online communities, and Metagov projects
+// Metagov Focus Optic - Step 2
 
+// Overall Optic Behavior:
+// This optic is designed to prioritize content related to Metagov and governance in general.
+// It works as follows:
+// 1. Any result from metagov.org gets a significant boost (Boost(2)).
+// 2. Results mentioning "governance" in the title or description get a smaller boost (Boost(1)).
+// 3. The Like statement for metagov.org further reinforces preference for this domain.
+//
+// Rule Interaction:
+// - Rules are applied independently, so a result can be boosted by multiple rules.
+// - A result from metagov.org mentioning "governance" would get both boosts, significantly increasing its ranking.
+// - The Like statement works in conjunction with the rules, potentially giving metagov.org content
+//   an additional edge in ranking beyond the explicit boost.
+//
+// Search Result Impact:
+// - Results from metagov.org will appear higher in the search results.
+// - Governance-related content from other sources will also be promoted, but to a lesser degree.
+// - Other results will maintain their original ranking relative to each other.
+// 
+// Note: The actual impact may vary based on the search query and available content in the Stract index.
+
+// Rule 1: Boost results from metagov.org
+// This rule significantly increases the ranking of any result from the metagov.org domain
 Rule {
     Matches {
         Domain("metagov.org")
@@ -8,88 +29,20 @@ Rule {
     Action(Boost(2))
 };
 
-Rule {
-    Matches {
-        Title("digital governance")
-    },
-    Matches {
-        Title("online governance")
-    },
-    Matches {
-        Title("self-governance")
-    },
-    Matches {
-        Description("digital governance")
-    },
-    Matches {
-        Description("online governance")
-    },
-    Matches {
-        Description("self-governance")
-    },
-    Action(Boost(1))
-};
-
-Rule {
-    Matches {
-        Title("DAOstar")
-    },
-    Matches {
-        Title("Interoperable Institutions Initiative")
-    },
-    Matches {
-        Title("Calm Technology")
-    },
-    Matches {
-        Title("Public AI")
-    },
-    Matches {
-        Description("DAOstar")
-    },
-    Matches {
-        Description("Interoperable Institutions Initiative")
-    },
-    Matches {
-        Description("Calm Technology")
-    },
-    Matches {
-        Description("Public AI")
-    },
-    Action(Boost(1))
-};
-
+// Rule 2: Boost governance-related content
+// This rule slightly increases the ranking of results that mention "governance"
+// in either the title or the description
 Rule {
     Matches {
         Title("governance")
     },
     Matches {
-        Title("community")
-    },
-    Matches {
-        Title("research")
-    },
-    Matches {
-        Title("digital")
-    },
-    Matches {
-        Title("online")
-    },
-    Matches {
         Description("governance")
-    },
-    Matches {
-        Description("community")
-    },
-    Matches {
-        Description("research")
-    },
-    Matches {
-        Description("digital")
-    },
-    Matches {
-        Description("online")
     },
     Action(Boost(1))
 };
 
+// Like statement: Express preference for metagov.org
+// This indicates to Stract that the user generally prefers content from metagov.org
+// It may influence results beyond just boosting the domain
 Like(Site("metagov.org"));
