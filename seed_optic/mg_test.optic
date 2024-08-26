@@ -16,23 +16,22 @@ Rule {
     Matches {
         Domain("metagov.org")
     },
-    Action(Boost(2))
+    Action(Boost(3))
 };
 
 // Rule 2: Boost content directly related to self-governance in the digital age
 Rule {
     Matches {
         Content("self-governance"),
-        Content("digital age")
+        Content("digital")
     },
-    Action(Boost(1.5))
+    Action(Boost(2))
 };
 
 // Rule 3: Boost content about tools for digital self-governance
 Rule {
     Matches {
         Content("tools"),
-        Content("digital"),
         Content("self-governance")
     },
     Action(Boost(1))
@@ -42,7 +41,6 @@ Rule {
 Rule {
     Matches {
         Content("practices"),
-        Content("digital"),
         Content("self-governance")
     },
     Action(Boost(1))
@@ -52,7 +50,6 @@ Rule {
 Rule {
     Matches {
         Content("communities"),
-        Content("digital"),
         Content("self-governance")
     },
     Action(Boost(1))
