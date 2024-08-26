@@ -16,12 +16,12 @@ The motivation behind this optic is to create a focused lens for researchers and
 7. Boost specific research areas: Increases visibility of content related to cryptoeconomics, decentralized systems, and collective intelligence.
 
 ## Example Searches
-1. Search Query: "digital governance models"
-   - How results changed: More results from Metagov and CryptoEcon Systems, with a focus on self-governance and community practices.
-   - Notable observations: Increased presence of academic and research-oriented content.
+1. Search Query: "crypto economic systems"
+   - How results changed: More relevant and less general results. 
+   - Notable observations: Increased presence of academic, standards, and research-oriented content.
 
-2. Search Query: "decentralized decision-making tools"
-   - How results changed: Higher ranking of results discussing specific tools and technologies, with a focus on their application in governance contexts.
+2. Search Query: "malleable governance"
+   - How results changed: More domain specific results and richer set of resources inclusing surveys, policy, research, and archives.
    - Notable observations: More diverse range of sources, including both theoretical discussions and practical implementations.
 
 ## Development Process
