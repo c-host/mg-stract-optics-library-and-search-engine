@@ -20,6 +20,8 @@ The Metagov Optics Library is a collaborative space for creating, sharing, and e
 
 The custom search engine allows users to search for information using the Metagov Community self-governed search engine. It includes features for writing and testing custom optics in real-time.
 
+You can test the Vercel deployment of the search engine here: https://mg-stract-optics-library-and-search-engine.vercel.app/
+
 ### Key Features:
 - Search functionality using Stract's API
 - Custom optics editor and tester
