@@ -1,6 +1,6 @@
-# Metagov Optics (MG Optics)
+# Metagov Stract Optics Library and Search Engine
 
-This repository contains two main components: a library of Stract optics focused on digital governance and a custom search engine that utilizes these optics.
+This repository contains two main components: a library of Stract optics focused on digital governance and a custom search engine for using and making optics.
 
 ## Repository Structure
 
