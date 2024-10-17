@@ -40,3 +40,7 @@ We welcome contributions to both the Metagov Optics Library and the custom searc
 ## License
 
 This project is licensed under the [AGPL-3.0 license](LICENSE).
+
+## Credits
+
+This code base makes use of Stract to power the search engine. More information about Stract available in the [Stract Repo](https://github.com/StractOrg/stract)
