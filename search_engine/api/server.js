@@ -31,7 +31,6 @@ app.get('/optic/:id', (req, res) => {
     }
 });
 
-// This should be the last route
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
