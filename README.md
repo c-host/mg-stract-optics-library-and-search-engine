@@ -39,4 +39,4 @@ We welcome contributions to both the Metagov Optics Library and the custom searc
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [AGPL-3.0 license](LICENSE).
