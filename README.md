@@ -1,6 +1,6 @@
-# Metagov Optics (MG Optics)
+# Metagov Stract Optics Library and Search Engine
 
-This repository contains two main components: a library of Stract optics focused on digital governance and a custom search engine that utilizes these optics.
+This repository contains two main components: a library of Stract optics focused on digital governance and a custom search engine for using and making optics.
 
 ## Repository Structure
 
@@ -39,4 +39,8 @@ We welcome contributions to both the Metagov Optics Library and the custom searc
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [AGPL-3.0 license](LICENSE).
+
+## Credits
+
+This code base makes use of Stract to power the search engine. More information about Stract available in the [Stract Repo](https://github.com/StractOrg/stract)
