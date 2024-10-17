@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metagov Community Governed Stract Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="open-panel-btn" class="panel-btn">Open Optics Panel</button>
+    <div id="optics-panel">
+        <button id="close-panel-btn" class="panel-btn">Close</button>
+        <h2>Custom Optics Editor</h2>
+        <p id="optics-instructions">
+            Writing Optics:
+            <br>1. Use the code editor below to write your optic.
+            <br>2. Optics consist of a sequence of rules.
+            <br>3. Each rule defines how a particular search result should be altered.
+            <br>4. Rules have a Matches block and an Action block.
+            <br>5. Matches can include conditions for Title, Url, Domain, etc.
+            <br>6. Actions can be Boost, Downrank, or Discard.
+            <br>7. You can use Like and Dislike to influence rankings.
+            <br>8. You can discard non-matching results to exclude them from the results.
+            <br>9. More information on writing optics can be found <a
+                href="https://github.com/StractOrg/sample-optics/blob/main/quickstart.optic" target="_blank">here</a>.
+            <br>
+            <br>Using Optics:
+            <br>1. Save your optic.
+            <br>2. A unique URL will be generated and used as the new Custom Optic.
+            <br>3. Test your optic using the "Test Optic" button below.
+            <br>4. Use the "Search" button to perform a new search with your optic.
+            <br>5. You can edit your optic and save it to update the Custom Optic.
+        </p>
+        <textarea id="optics-editor"></textarea>
+        <div class="panel-buttons">
+            <button id="save-optic-btn" class="panel-btn">Save Optic</button>
+            <button id="test-optic-btn" class="panel-btn">Test Optic</button>
+        </div>
+        <div id="optic-url" style="margin-top: 1rem; word-break: break-all;"></div>
+    </div>
+    <main class="main-content">
+        <div id="search-container">
+            <h1>A Metagov Search Engine</h1>
+            <p>Use the search bar below to search for information on the Metagov Community self-governed search
+                engine.
+            </p>
+            <p>You can also use the Open Optics Panel to write your own custom optics and test them in real time.
+            </p>
+            <form id="searchbar-form">
+                <div class="search-input-container">
+                    <input type="text" id="search-input" name="query" placeholder="Enter your search query">
+                    <button id="search-button" type="submit">Search</button>
+                </div>
+                <select id="optics-selector" name="optic">
+                    <option value="">No Optic</option>
+                    <option
+                        value="https://raw.githubusercontent.com/c-host/mg_optics/main/optics/mgce_fusion/mgce_fusion.optic">
+                        Metagov + CES</option>
+                    <option value="" id="custom-optic-option">Custom Optic</option>
+                </select>
+            </form>
+            <p style="font-size: 0.9em; color: #666; font-style: italic;">Select an optic to use with your search.
+                Learn
+                more about optics <a href="https://github.com/StractOrg/sample-optics/blob/main/quickstart.optic"
+                    target="_blank">here</a>.
+            </p>
+        </div>
+        <div class="loading">Searching...</div>
+        <div id="results"></div>
+        <div id="pagination">
+            <button id="prev-page" class="page-btn">Previous</button>
+            <span id="page-info">Page <span id="current-page">1</span> of <span id="total-pages">1</span></span>
+            <button id="next-page" class="page-btn">Next</button>
+        </div>
+        <footer>
+            <p style="font-size: 0.9em; color: #666; font-style: italic;">Powered by <a href="https://stract.com"
+                    target="_blank">Stract</a> and Governed by <a href="https://metagov.org/join/community"
+                    target="_blank">The Metagov Community</a></p>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

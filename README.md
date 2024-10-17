@@ -1,33 +1,42 @@
-# Metagov Optics Library
+# Metagov Optics (MG Optics)
 
-Welcome to the Metagov Optics Library! This repository is a collaborative space for creating, sharing, and exploring Stract optics related to Metagov's research areas and digital governance.
+This repository contains two main components: a library of Stract optics focused on digital governance and a custom search engine that utilizes these optics.
 
-## What are Stract Optics?
+## Repository Structure
 
-Stract optics are custom rules that influence search results in the Stract search engine. They allow users to prioritize certain types of content, boosting or downranking results based on specific criteria.
+- `/library`: Contains the Metagov Optics Library, including various optics and documentation.
+- `/search_engine`: Houses the custom search engine implementation.
 
-## Why This Library?
+## Metagov Optics Library
 
-This library aims to:
-1. Showcase diverse perspectives on digital governance research
-2. Provide a learning resource for creating effective optics
-3. Foster creativity in approaching digital governance topics
-4. Create a collaborative space for the Metagov community
+The Metagov Optics Library is a collaborative space for creating, sharing, and exploring Stract optics related to Metagov's research areas and digital governance. For more information, see the [library README](library/README.md).
 
-## How to Contribute
+### Getting Started with the Library
 
-1. Fork this repository
-2. Create a new directory under `/optics` with your optic's name
-3. Add your `.optic` file and accompanying README.md
-4. Submit a pull request with a brief description of your optic
+1. Clone this repository
+2. Read the [library README](library/README.md) for instructions on how to contribute to the library.
 
-See our [Contribution Guidelines](CONTRIBUTING.md) for more details.
+## Custom Search Engine
 
-## Example Optics
+The custom search engine allows users to search for information using the Metagov Community self-governed search engine. It includes features for writing and testing custom optics in real-time.
 
-- [Metagov + Cryptoeconmic Systems Optic](optics/mgce_fusion/mgce_fusion.optic): This optic prioritizes content related to Metagov's research areas, digital governance, and community-driven initiatives in the digital age. It aims to surface relevant content for researchers, practitioners, and the Metagov community. It makes a link between Metagov and the Cryptoeconomic Systems publication.
+### Key Features:
+- Search functionality using Stract's API
+- Custom optics editor and tester
+- Integration with the Metagov Optics Library
 
-## Get Started
+### Getting Started with the Search Engine
 
-- [How to Create an Optic](guides/how_to_create_an_optic.md)
-- [How to Test Your Optic](guides/how_to_test_your_optic.md)
+1. Clone this repository
+2. Change directory to `mg_optics/search_engine` with `cd mg_optics/search_engine`
+3. Install dependencies: `npm install`
+4. Start the server: `npm start`
+5. Open `http://localhost:3000` in your browser
+
+## Contributing
+
+We welcome contributions to both the Metagov Optics Library and the custom search engine. Please see our [Contribution Guidelines](CONTRIBUTING.md) for more information.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

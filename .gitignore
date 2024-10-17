@@ -1,0 +1,8 @@
+# Node.js dependencies
+search_engine/node_modules/
+
+# npm package files
+search_engine/package-lock.json
+
+# IDEs and editors
+.vscode/
